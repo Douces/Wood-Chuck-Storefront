@@ -1,0 +1,30 @@
+:root {
+  --walnut: #3e2723;
+  --bark: #5d4037;
+  --oak: #8d6e63;
+  --burnt-orange: #c8742c;
+  --amber: #e0a050;
+  --cream: #f5ecd9;
+  --parchment: #efe3c8;
+  --ink: #2b1d14;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}

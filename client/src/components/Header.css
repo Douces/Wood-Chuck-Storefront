@@ -1,0 +1,66 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 2rem;
+  background: var(--walnut);
+  border-bottom: 4px solid var(--burnt-orange);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.site-title {
+  color: var(--cream);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav a {
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.15s ease,
+    color 0.2s ease;
+}
+
+/* hover: lighter bubble that lifts slightly */
+.site-nav a:hover {
+  background: rgba(245, 236, 217, 0.15);
+  transform: translateY(-2px);
+}
+
+/* click: bubble presses in and turns orange */
+.site-nav a:active {
+  background: var(--cream);
+  transform: translateY(0) scale(0.95);
+}
+
+/* the page you're currently on */
+.site-nav a.active {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+/* keyboard users get a visible outline */
+.site-nav a:focus-visible {
+  outline: 2px solid var(--cream);
+  outline-offset: 2px;
+}
+
+.header-account {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bark);
+  border: 2px solid var(--oak);
+}
